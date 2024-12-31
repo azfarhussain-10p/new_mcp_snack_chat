@@ -19,7 +19,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        h1 {
+        h1, h2 {
             color: #333;
             text-align: center;
         }
@@ -27,12 +27,64 @@
             line-height: 1.6;
             color: #666;
         }
+        nav {
+            background: #333;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .snack-list {
+            list-style: none;
+            padding: 0;
+        }
+        .snack-list li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .contact {
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#snacks">Snacks</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
         <h1>Welcome to MCP Snack Chat</h1>
-        <p>This is a simple webpage for our snack chat application. More content coming soon!</p>
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are passionate about bringing people together through their love of snacks!</p>
+        </section>
+
+        <section id="snacks">
+            <h2>Popular Snacks</h2>
+            <ul class="snack-list">
+                <li>🍿 Popcorn</li>
+                <li>🥨 Pretzels</li>
+                <li>🍪 Cookies</li>
+                <li>🥜 Mixed Nuts</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: hello@mcpsnackchat.com</p>
+            <p>Phone: (555) 123-4567</p>
+        </section>
     </div>
 </body>
 </html>
